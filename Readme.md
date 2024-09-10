@@ -86,7 +86,7 @@ Ainda no diretório do projeto, instale as dependências necessárias:
     country text,
     area text,
     contribution text
-  )
+  );
  ```
 #### Inserir os Dados Iniciais
 #### Ainda no CQLSH, insira os dados das profissionais de tecnologia:
