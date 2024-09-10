@@ -5,7 +5,7 @@ node_modules/
 *.log
 
 # npm
-package-lock.json
+#package-lock.json
 yarn.lock
 
 # Environment files
