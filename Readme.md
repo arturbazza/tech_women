@@ -15,56 +15,56 @@ Este projeto implementa uma API Node.js que se conecta ao banco de dados Apache 
 Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pasta.
 
   ```bash
-  $ git https://github.com/arturbazza/tech_women.git
+  git https://github.com/arturbazza/tech_women.git
 
-  $ cd tech_women
+  cd tech_women
   ```
 
 ### 2. Instalar Dependências do Projeto Node.js
 
 Inicialize um Projeto Node.js:
 ```bash
-$ npm init -y
+  npm init -y
   ```
 Ainda no diretório do projeto, instale as dependências necessárias:
  ```bash
-  $ npm install
+  npm install
  ```
 ### 3. Criando uma rede no docker com Windows conectar-se:
  ```bash
-  $ docker network create cassandra-network
+  docker network create cassandra-network
  ```
 ### 4. Rodar o cassanndra na rede que criamos acima:
    ```bash
-  $ docker run --name cassandra --network cassandra-network -d cassandra
+  docker run --name cassandra --network cassandra-network -d cassandra
  ```
 ### 5. Ver as imagens no docker que está rodando (se necessário):
    ```bash
-  $ docker ps
+  docker ps
  ```
 ### 6. Inspeconar o Cassandra (se necessário):
  ```bash
-  $ docker inspect cassandra
+  docker inspect cassandra
  ```
 ### 7. Listar as redes no Docker (se necessário):
    ```bash
-  $ docker network ls
+  docker network ls
  ```
 ### 8. Executar o Container Docker do Cassandra:
  ```bash
-  $ docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
+  docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
  ```
 #### Isso vai iniciar o servidor na porta 3000.
 
 ### 9. Subir o Container Cassandra
 #### Para rodar o banco de dados Apache Cassandra, utilize Docker:
  ```bash
-  $ docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
+  docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
  ```
 ### 10. Conectar ao CQLSH e Configurar o Keyspace e a Tabela
 #### Entre no container Cassandra e abra o CQLSH (interface do Cassandra para executar comandos SQL-like):
  ```bash
-  $ docker exec -it some-cassandra cqlsh
+  docker exec -it some-cassandra cqlsh
  ```
 ### 11. Criando a estrutura e inserindo os dados na tabela
 #### No CQLSH, execute os seguintes comandos para criar o keyspace e a tabela:
