@@ -62,6 +62,10 @@ Ainda no diretório do projeto, instale as dependências necessárias:
  ```bash
   docker exec -it some-cassandra cqlsh
  ```
+#### Listar todos os keyspaces:
+```bash
+  DESCRIBE KEYSPACES;
+```
 ### 11. Criando a estrutura e inserindo os dados na tabela
 #### No CQLSH, execute os seguintes comandos para criar o keyspace e a tabela:
 
@@ -72,7 +76,7 @@ Ainda no diretório do projeto, instale as dependências necessárias:
     'class': 'SimpleStrategy',
     'replication_factor': 1
   };
- ```
+ ```s
 #### Usando o BD:
  ```bash
   USE tech_women;
