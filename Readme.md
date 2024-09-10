@@ -174,7 +174,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 #### *TODOS OS CAMPOS SÃO OBRIGATÓRIOS
 
   - Método: PUT
-  - URL: http://localhost:3000/divas/{id}
+  - URL: http://localhost:3000/professionals/{id}
   - Body (JSON):
  ```bash
     {
@@ -188,7 +188,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 #### DELETE Remover uma Profissional:
 
   - Método: DELETE
-  - URL: http://localhost:3000/divas/{id}
+  - URL: http://localhost:3000/professionals/{id}
 
 
 ## Print Screem:
@@ -207,12 +207,26 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 
   ![BD](imgs/01GET.jpg)
 
-#### GET Todas as Profissionais:
+#### POST Adicionar uma Profissional:
   - Método: POST
   - URL: http://localhost:3000/professionals
   - Body (JSON)
 
   ![BD](imgs/02POST.jpg)
+
+#### PUT Atualizar uma Profissional:
+  - Método: POST
+  - URL: http://localhost:3000/professionals/{id}
+  - Body (JSON)
+
+  ![BD](imgs/03PUT.jpg)
+
+#### DELETE Remover as Profissionais:
+  - Método: DELETE
+  - URL: http://localhost:3000/professionals/{id}
+  - Body (JSON)
+
+  ![BD](imgs/04DELETE.jpg)
 
 
 
