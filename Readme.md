@@ -110,7 +110,10 @@ VALUES (uuid(), 'Radia Perlman', '1951', 'Estados Unidos', 'Redes de Computadore
 INSERT INTO professionals_woman (id, name, birth, country, area, contribution) 
 VALUES (uuid(), 'Katherine Johnson', '1918', 'Estados Unidos', 'Matemática, Ciência da Computação', 'Cálculos cruciais para missões espaciais da NASA.');
  ```
-
+#### Faça um consulta de teste (não necessário):
+```bash
+  SELECT * FROM professionals_woman;
+```
 ### 12. Testar a API com Postman
 #### Agora que o servidor está rodando, você pode testar a API utilizando o Postman ou outra ferramenta de API. As rotas disponíveis são:
 
