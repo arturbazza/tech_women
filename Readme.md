@@ -32,6 +32,10 @@ Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pa
 ```bash
   npm install express --save
 ```
+ #### Instalar o cassandra-driver:
+```bash
+  npm install cassandra-driver --save
+```
 ### 3. Criando uma rede no docker com Windows conectar-se:
  ```bash
   docker network create cassandra-network
