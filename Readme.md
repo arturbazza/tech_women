@@ -221,7 +221,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 
   ![BD](imgs/03PUT.jpg)
 
-#### DELETE Remover as Profissionais:
+#### DELETE Remover as Profissional:
   - Método: DELETE
   - URL: http://localhost:3000/professionals/{id}
   - Body (JSON)
