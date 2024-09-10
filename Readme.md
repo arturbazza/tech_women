@@ -76,7 +76,7 @@ Ainda no diretório do projeto, instale as dependências necessárias:
     'class': 'SimpleStrategy',
     'replication_factor': 1
   };
- ```s
+ ```
 #### Usando o BD:
  ```bash
   USE tech_women;
