@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/arturbazza/tech_women/issues"
   },
-  "homepage": "https://github.com/arturbazza/tech_women#readme"
+  "homepage": "https://github.com/arturbazza/tech_women#readme",
+  "dependencies": {
+    "express": "^4.20.0"
+  }
 }

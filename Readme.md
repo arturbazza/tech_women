@@ -30,6 +30,10 @@ Ainda no diretório do projeto, instale as dependências necessárias:
  ```bash
   npm install
  ```
+ Se as deoendências não forem instaladas, adicionando dependências manualmente:
+```bash
+  npm install express --save
+```
 ### 3. Criando uma rede no docker com Windows conectar-se:
  ```bash
   docker network create cassandra-network
