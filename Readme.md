@@ -171,13 +171,19 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
  ```
 #### PUT Atualizar uma Profissional:
 
+#### *TODOS OS CAMPOS SÃO OBRIGATÓRIOS
+
   - Método: PUT
   - URL: http://localhost:3000/divas/{id}
   - Body (JSON):
  ```bash
-      {
-        "area": "Engenharia de Software e Ciência da Computação"
-      }
+    {
+       "name": "Margaret Hamilton",
+       "birth": "1936",
+       "country": "Estados Unidos",
+       "area": "Engenharia de Software",
+       "contribution": "Engenharia de Software e Ciência da Computação!!!!"
+     }
  ```
 #### DELETE Remover uma Profissional:
 
