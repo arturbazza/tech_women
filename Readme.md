@@ -28,13 +28,17 @@ Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pa
  ```bash
   npm install
  ```
- #### Se as deoendências não forem instaladas, adicionando dependências manualmente:
+#### Se as deoendências não forem instaladas, adicionando dependências manualmente:
 ```bash
   npm install express --save
 ```
- #### Instalar o cassandra-driver:
+#### Instalar o cassandra-driver:
 ```bash
   npm install cassandra-driver --save
+```
+#### Instalar o module 'uuid':
+```bash
+  npm install uuid
 ```
 ### 3. Criando uma rede no docker com Windows conectar-se:
  ```bash

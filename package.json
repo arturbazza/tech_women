@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/arturbazza/tech_women#readme",
   "dependencies": {
-    "express": "^4.20.0"
+    "cassandra-driver": "^4.7.2",
+    "express": "^5.0.0",
+    "uuid": "^10.0.0"
   }
 }
