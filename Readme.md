@@ -47,7 +47,7 @@ Ainda no diretório do projeto, instale as dependências necessárias:
 
   $ docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
 
-### Isso vai iniciar o servidor na porta 3000.
+#### Isso vai iniciar o servidor na porta 3000.
 
 ### 9. Subir o Container Cassandra
 #### Para rodar o banco de dados Apache Cassandra, utilize Docker:
