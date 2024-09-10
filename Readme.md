@@ -1,4 +1,4 @@
-# Projeto Node.js com Cassandra - Profissionais de Tecnologia
+# Projeto Node.js com Cassandra
 
 Este projeto implementa uma API Node.js que se conecta ao banco de dados Apache Cassandra para gerenciar informações sobre profissionais de tecnologia, com foco em mulheres que fizeram contribuições importantes na área.
 
