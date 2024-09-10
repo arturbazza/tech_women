@@ -185,7 +185,13 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 
 ## Print Screem:
 
+#### Banco de Dados:
+
   ![BD](imgs/BD-e-Dados.jpg)
+
+#### API Running
+
+  ![BD](imgs/API-Running.jpg)
 
 # Divirta-se! ;-)
 
