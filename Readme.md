@@ -153,7 +153,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 #### PUT Atualizar uma Profissional:
 
   - Método: PUT
-  - URL: http://localhost:3000/divas/<ID_DA_PROFISSIONAL>
+  - URL: http://localhost:3000/divas/{id}
   - Body (JSON):
  ```bash
       {
