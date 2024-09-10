@@ -193,6 +193,12 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 
   ![BD](imgs/API-Running.jpg)
 
+#### GET Todas as Profissionais:
+  - Método: GET
+  - URL: http://localhost:3000/professionals
+
+  ![BD](imgs/01GET.jpg)
+
 # Divirta-se! ;-)
 
 
