@@ -19,18 +19,16 @@ Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pa
 
   cd tech_women
   ```
-
 ### 2. Instalar Dependências do Projeto Node.js
-
-Inicialize um Projeto Node.js:
+#### Inicialize um Projeto Node.js:
 ```bash
   npm init -y
   ```
-Ainda no diretório do projeto, instale as dependências necessárias:
+#### Ainda no diretório do projeto, instale as dependências necessárias:
  ```bash
   npm install
  ```
- Se as deoendências não forem instaladas, adicionando dependências manualmente:
+ #### Se as deoendências não forem instaladas, adicionando dependências manualmente:
 ```bash
   npm install express --save
 ```
