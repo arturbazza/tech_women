@@ -134,7 +134,7 @@ VALUES (uuid(), 'Katherine Johnson', '1918', 'Estados Unidos', 'Matemática, Ci�
  ```bash
       {
         "name": "Nome da Profissional",
-        "birth": 1900,
+        "birth": "1900",
         "country": "País",
         "area": "Área de Atuação",
         "contribution": "Contribuição"
@@ -161,7 +161,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
  ```bash
       {
         "name": "Margaret Hamilton",
-        "birth": 1936,
+        "birth": "1936",
         "country": "Estados Unidos",
         "area": "Engenharia de Software",
         "contribution": "Desenvolvimento do software de voo da Apollo."
