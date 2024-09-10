@@ -14,69 +14,71 @@ Este projeto implementa uma API Node.js que se conecta ao banco de dados Apache 
 
 Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pasta.
 
+  ```bash
   $ git https://github.com/arturbazza/tech_women.git
 
   $ cd tech_women
+  ```
 
 ### 2. Instalar Dependências do Projeto Node.js
 
 Ainda no diretório do projeto, instale as dependências necessárias:
-
+ ```bash
   $ npm install
-
+ ```
 ### 3. Criando uma rede no docker com Windows conectar-se:
-
+ ```bash
   $ docker network create cassandra-network
-
+ ```
 ### 4. Rodar o cassanndra na rede que criamos acima:
-  
+   ```bash
   $ docker run --name cassandra --network cassandra-network -d cassandra
-
+ ```
 ### 5. Ver as imagens no docker que está rodando (se necessário):
+   ```bash
   $ docker ps
-
+ ```
 ### 6. Inspeconar o Cassandra (se necessário):
-
+ ```bash
   $ docker inspect cassandra
-
+ ```
 ### 7. Listar as redes no Docker (se necessário):
-  
+   ```bash
   $ docker network ls
-
+ ```
 ### 8. Executar o Container Docker do Cassandra:
-
+ ```bash
   $ docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
-
+ ```
 #### Isso vai iniciar o servidor na porta 3000.
 
 ### 9. Subir o Container Cassandra
 #### Para rodar o banco de dados Apache Cassandra, utilize Docker:
-
+ ```bash
   $ docker run --name some-cassandra -p 9042:9042 -d cassandra:latest
-
-
+ ```
 ### 10. Conectar ao CQLSH e Configurar o Keyspace e a Tabela
 #### Entre no container Cassandra e abra o CQLSH (interface do Cassandra para executar comandos SQL-like):
-
+ ```bash
   $ docker exec -it some-cassandra cqlsh
-
+ ```
 ### 11. Criando a estrutura e inserindo os dados na tabela
 #### No CQLSH, execute os seguintes comandos para criar o keyspace e a tabela:
 
 #### Criando BD:
-
+ ```bash
   CREATE KEYSPACE IF NOT EXISTS tech_women
   WITH replication = {
     'class': 'SimpleStrategy',
     'replication_factor': 1
   };
-
+ ```
 #### Usando o BD:
-
+ ```bash
   USE tech_women;
-
+ ```
 #### Criando tabela:
-
+ ```bash
   CREATE TABLE IF NOT EXISTS professionals_woman (
     id UUID PRIMARY KEY,
     name text,
@@ -85,10 +87,10 @@ Ainda no diretório do projeto, instale as dependências necessárias:
     area text,
     contribution text
   )
-
+ ```
 #### Inserir os Dados Iniciais
 #### Ainda no CQLSH, insira os dados das profissionais de tecnologia:
-
+ ```bash
 INSERT INTO professionals_woman (id, name, birth, country, area, contribution) 
 VALUES (uuid(), 'Ada Lovelace', '1815', 'Reino Unido', 'Matemática, Programação', 'Primeira programadora de computadores.');
 
@@ -103,8 +105,7 @@ VALUES (uuid(), 'Radia Perlman', '1951', 'Estados Unidos', 'Redes de Computadore
 
 INSERT INTO professionals_woman (id, name, birth, country, area, contribution) 
 VALUES (uuid(), 'Katherine Johnson', '1918', 'Estados Unidos', 'Matemática, Ciência da Computação', 'Cálculos cruciais para missões espaciais da NASA.');
-
-
+ ```
 
 ### 12. Testar a API com Postman
 #### Agora que o servidor está rodando, você pode testar a API utilizando o Postman ou outra ferramenta de API. As rotas disponíveis são:
@@ -113,6 +114,7 @@ VALUES (uuid(), 'Katherine Johnson', '1918', 'Estados Unidos', 'Matemática, Ci�
 
   - POST /professionals: Adiciona uma nova profissional. No corpo da requisição, envie um JSON com os seguintes campos:
 
+ ```bash
       {
         "name": "Nome da Profissional",
         "birth": 1900,
@@ -120,7 +122,7 @@ VALUES (uuid(), 'Katherine Johnson', '1918', 'Estados Unidos', 'Matemática, Ci�
         "area": "Área de Atuação",
         "contribution": "Contribuição"
       }
-
+ ```
   - PUT /professionals/
 Atualiza as informações de uma profissional existente. No corpo da requisição, envie os campos que deseja atualizar no mesmo formato do POST.
 
@@ -139,7 +141,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
   - Método: POST
   - URL: http://localhost:3000/professionals
   - Body (JSON):
-
+ ```bash
       {
         "name": "Margaret Hamilton",
         "birth": 1936,
@@ -147,21 +149,21 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
         "area": "Engenharia de Software",
         "contribution": "Desenvolvimento do software de voo da Apollo."
       }
-
+ ```
 #### PUT Atualizar uma Profissional:
 
   - Método: PUT
   - URL: http://localhost:3000/divas/<ID_DA_PROFISSIONAL>
   - Body (JSON):
-s
+ ```bash
       {
         "area": "Engenharia de Software e Ciência da Computação"
       }
-
+ ```
 #### DELETE Remover uma Profissional:
 
   - Método: DELETE
-  - URL: http://localhost:3000/divas/<ID_DA_PROFISSIONAL>
+  - URL: http://localhost:3000/divas/{id}
 
 
 ## Print Screem:
