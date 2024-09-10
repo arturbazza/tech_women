@@ -146,6 +146,8 @@ Atualiza as informações de uma profissional existente. No corpo da requisiçã
 - DELETE /professionals/
 Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional a ser removida.
 
+# Divirta-se! ;-)
+
 ### 13. Exemplo de Requisições no Postman:
 
 #### GET Todas as Profissionais:
@@ -199,6 +201,13 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
 
   ![BD](imgs/01GET.jpg)
 
-# Divirta-se! ;-)
+#### GET Todas as Profissionais:
+  - Método: POST
+  - URL: http://localhost:3000/professionals
+  - Body (JSON)
+
+  ![BD](imgs/02POST.jpg)
+
+
 
 
