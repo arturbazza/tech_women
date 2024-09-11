@@ -20,6 +20,7 @@
   "dependencies": {
     "cassandra-driver": "^4.7.2",
     "express": "^5.0.0",
+    "tech_women": "file:",
     "uuid": "^10.0.0"
   }
 }
