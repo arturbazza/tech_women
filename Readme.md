@@ -146,7 +146,17 @@ Atualiza as informações de uma profissional existente. No corpo da requisiçã
 - DELETE /professionals/
 Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional a ser removida.
 
-# Divirta-se! ;-)
+## Rodando a API para fazer os testes como Postman
+
+#### Na raiz do projeto execute:
+
+ ```bash
+  node index.js
+ ```
+
+ ### Aparecendo "Server running on http://localhost:3000" signmifica que o server está em execução e podemos ir para os testes com o Postman.
+
+### Agora, Divirta-se! ;-)
 
 ### 13. Exemplo de Requisições no Postman:
 
