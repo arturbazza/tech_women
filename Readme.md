@@ -236,7 +236,7 @@ Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional
   - URL: http://localhost:3000/professionals/{id}
   - Body (JSON)
 
-  ![BD](imgs/04DELETE.jpg)
+  ![BD](imgs/04DELETE_NEW.jpg)
 
 
 
