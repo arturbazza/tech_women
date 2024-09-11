@@ -146,7 +146,7 @@ Atualiza as informações de uma profissional existente. No corpo da requisiçã
 - DELETE /professionals/
 Exclui uma profissional do banco de dados. Substitua :id pelo ID da profissional a ser removida.
 
-## Rodando a API para fazer os testes como Postman
+## Rodando a API para fazer os testes com o Postman
 
 #### Na raiz do projeto execute:
 
