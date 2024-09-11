@@ -28,7 +28,7 @@ Primeiro, clone o repositório contendo o código-fonte do projeto e acesse a pa
  ```bash
   npm install
  ```
-#### Se as deoendências não forem instaladas, adicionando dependências manualmente:
+#### Se as dependências não forem instaladas adicione-as manualmente:
 ```bash
   npm install express --save
 ```
